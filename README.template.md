@@ -1,5 +1,7 @@
 # passport-photo-specs
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23321885.svg)](https://doi.org/10.5281/zenodo.23321885)
+
 Open, machine-readable **passport, visa and ID photo requirements** — print size, pixel dimensions, head height, background colour, glasses/expression rules and digital upload limits — for **{{N}} documents in {{C}} countries**. Every non-null value comes from an **official government page** (`source_url`), checked on 2026-10-12. If a value could not be verified it is `null`; nothing is guessed.
 
 - `data/specs.json` — canonical data · `data/specs.csv` — generated from JSON

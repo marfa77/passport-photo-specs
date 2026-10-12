@@ -14,7 +14,7 @@ readme = (root/"README.template.md").read_text().replace("{{TABLE}}", rows).repl
 trs = "\n".join(f'<tr><td>{html.escape(e["country"])}</td><td>{html.escape(e["document"])}</td><td>{html.escape(size(e))}</td><td>{html.escape(v(e["head_height_mm"]) if e["head_height_mm"] else v(e["head_height_pct"]))}</td><td>{html.escape(v(e["background"]))}</td><td>{html.escape(v(e["file_size"]))}</td><td><a href="{html.escape(e["source_url"])}" rel="noopener">Official source</a>' + (f' · <a href="{e["pixid_guide_url"]}">Guide</a>' if e["pixid_guide_url"] else "") + '</td></tr>' for e in E)
 ld = {"@context":"https://schema.org","@type":"Dataset","name":"Passport & Visa Photo Specifications (passport-photo-specs)",
  "description":f"Machine-readable passport, visa and ID photo requirements for {len(E)} documents in {len({e['iso2'] for e in E})} countries: print size, pixel dimensions, head height, background, glasses, file limits — each value sourced from an official government page.",
- "url":"https://marfa77.github.io/passport-photo-specs/","license":"https://creativecommons.org/licenses/by/4.0/","isAccessibleForFree":True,
+ "url":"https://marfa77.github.io/passport-photo-specs/","license":"https://creativecommons.org/licenses/by/4.0/","isAccessibleForFree":True,"identifier":"https://doi.org/10.5281/zenodo.23321885",
  "keywords":["passport photo","visa photo","photo requirements","biometric photo","ICAO"],"version":d["version"],"dateModified":d["source_checked"],
  "creator":{"@type":"Organization","name":"PixID","url":"https://pixid.studio"},
  "distribution":[{"@type":"DataDownload","encodingFormat":"application/json","contentUrl":"https://raw.githubusercontent.com/marfa77/passport-photo-specs/main/data/specs.json"},
@@ -29,7 +29,7 @@ input{{width:100%;padding:10px;font-size:1rem;border:1px solid #bbb;border-radiu
 th,td{{text-align:left;padding:7px 8px;border-bottom:1px solid #e3e3e3;vertical-align:top}}th{{background:#f5f5f5;position:sticky;top:0}}a{{color:#0b5cad}}small{{color:#666}}</style></head>
 <body><h1>Passport & Visa Photo Specifications</h1>
 <p>Open, machine-readable photo requirements for {len(E)} passport, visa and ID documents across {len({e['iso2'] for e in E})} countries. Every value links to the official government source; unverified values are left blank. Last checked {d["source_checked"]}.
-Download <a href="https://github.com/marfa77/passport-photo-specs/blob/main/data/specs.json">JSON</a> · <a href="https://github.com/marfa77/passport-photo-specs/blob/main/data/specs.csv">CSV</a> · <a href="https://github.com/marfa77/passport-photo-specs">GitHub</a>. Data CC BY 4.0.</p>
+Download <a href="https://github.com/marfa77/passport-photo-specs/blob/main/data/specs.json">JSON</a> · <a href="https://github.com/marfa77/passport-photo-specs/blob/main/data/specs.csv">CSV</a> · <a href="https://github.com/marfa77/passport-photo-specs">GitHub</a>. Data CC BY 4.0. Cite: <a href="https://doi.org/10.5281/zenodo.23321885">DOI 10.5281/zenodo.23321885</a>.</p>
 <input id="q" type="search" placeholder="Filter by country or document (e.g. Canada, visa, 35×45)…" aria-label="Filter">
 <table id="t"><thead><tr><th>Country</th><th>Document</th><th>Size</th><th>Head height</th><th>Background</th><th>File size</th><th>Links</th></tr></thead><tbody>
 {trs}

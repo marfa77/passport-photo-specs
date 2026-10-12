@@ -7,6 +7,14 @@ date-released: 2026-10-12
 authors:
   - name: PixID
     website: https://pixid.studio
+doi: 10.5281/zenodo.23321885
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23321885
+    description: Concept DOI (all versions)
+  - type: doi
+    value: 10.5281/zenodo.23321886
+    description: Zenodo archive of GitHub release v1.0.1
 license: CC-BY-4.0
 repository-code: https://github.com/marfa77/passport-photo-specs
 url: https://marfa77.github.io/passport-photo-specs/
