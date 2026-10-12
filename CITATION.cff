@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "If you use this dataset, please cite it as below."
 type: dataset
 title: "passport-photo-specs: Passport & visa photo specifications"
-version: 1.0.0
+version: 1.0.1
 date-released: 2026-10-12
 authors:
   - name: PixID
