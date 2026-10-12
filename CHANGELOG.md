@@ -1,4 +1,6 @@
 # Changelog
+## [1.0.2] - 2026-10-12
+- archive refresh: related identifiers + DOI
 ## [1.0.1] - 2026-10-12
 - Zenodo metadata: related identifiers for pixid.studio and GitHub Pages docs; version bump for Zenodo archival (DOI).
 ## [1.0.0] - 2026-10-12
