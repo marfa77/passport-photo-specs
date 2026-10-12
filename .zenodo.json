@@ -1,0 +1,11 @@
+{
+  "title": "passport-photo-specs: Passport & visa photo specifications",
+  "upload_type": "dataset",
+  "description": "Open, machine-readable passport, visa and ID photo requirements (print size, pixel dimensions, head height, background, glasses/expression rules, digital file limits) for 22 documents in 15 countries. Every value is sourced from an official government page; unverified values are null.",
+  "creators": [{"name": "PixID"}],
+  "license": "cc-by-4.0",
+  "keywords": ["passport photo", "visa photo", "photo requirements", "biometric photo", "ICAO", "open data"],
+  "related_identifiers": [{"identifier": "https://github.com/marfa77/passport-photo-specs", "relation": "isSupplementTo", "scheme": "url"}],
+  "access_right": "open",
+  "version": "1.0.0"
+}
