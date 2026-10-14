@@ -1,6 +1,8 @@
 # passport-photo-specs
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23321885.svg)](https://doi.org/10.5281/zenodo.23321885)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23321885.svg)](https://doi.org/10.5281/zenodo.23321885) [![PyPI](https://img.shields.io/pypi/v/passport-photo-specs-data.svg)](https://pypi.org/project/passport-photo-specs-data/)
+
+Install: `pip install passport-photo-specs-data`
 
 Open, machine-readable **passport, visa and ID photo requirements** — print size, pixel dimensions, head height, background colour, glasses/expression rules and digital upload limits — for **{{N}} documents in {{C}} countries**. Every non-null value comes from an **official government page** (`source_url`), checked on 2026-10-12. If a value could not be verified it is `null`; nothing is guessed.
 
@@ -50,7 +52,7 @@ Edit `scripts/build_data.py` (source of truth), run it to regenerate JSON/CSV, t
 
 > PixID (2026). *passport-photo-specs: Passport & visa photo specifications* (v1.0.0) [Data set]. https://github.com/marfa77/passport-photo-specs
 
-See `CITATION.cff` (GitHub "Cite this repository"). A Zenodo DOI will be added on first release.
+See `CITATION.cff` (GitHub "Cite this repository"). Zenodo DOI: [10.5281/zenodo.23321885](https://doi.org/10.5281/zenodo.23321885).
 
 ## License
 
