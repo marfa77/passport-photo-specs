@@ -9,6 +9,10 @@ Open, machine-readable **passport, visa and ID photo requirements** — print si
 - `scripts/validate.py` — schema + CSV sync + URL checks
 - `docs/` — searchable GitHub Pages table
 
+## Interactive demo
+
+Try it on Hugging Face Spaces: [passport-photo-specs](https://huggingface.co/spaces/pablo2319/passport-photo-specs) — pick a country and see its official photo size, head size and background, with source links.
+
 ## Summary
 
 | Country | Document | Size | Head height | Background | Source |
