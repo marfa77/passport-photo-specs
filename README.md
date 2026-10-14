@@ -2,6 +2,12 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23321885.svg)](https://doi.org/10.5281/zenodo.23321885) [![PyPI](https://img.shields.io/pypi/v/passport-photo-specs-data.svg)](https://pypi.org/project/passport-photo-specs-data/)
 
+[![npm](https://img.shields.io/npm/v/passport-photo-specs-data.svg)](https://www.npmjs.com/package/passport-photo-specs-data)
+
+```sh
+npm install passport-photo-specs-data
+```
+
 Install: `pip install passport-photo-specs-data`
 
 Open, machine-readable **passport, visa and ID photo requirements** — print size, pixel dimensions, head height, background colour, glasses/expression rules and digital upload limits — for **22 documents in 15 countries**. Every non-null value comes from an **official government page** (`source_url`), checked on 2026-10-12. If a value could not be verified it is `null`; nothing is guessed.
